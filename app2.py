@@ -23,11 +23,7 @@ app.debug = True
 
 # Set up the SQLite database here
 
-
-
-
 # Initialize the database and migration tool
-
 
 # Define the User model for the database (Teammate 1 needs to complete this part)
 
