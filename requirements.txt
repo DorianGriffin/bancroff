@@ -32,7 +32,7 @@ urllib3==2.2.3
 
 # Utilities
 python-dateutil==2.9.0.post0
-tzdata==2025a
+tzdata==2025.2
 faker==30.8.1  # For test data generation
 
 # Development Tools (optional)

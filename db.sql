@@ -2,6 +2,7 @@ CREATE TABLE users (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   email TEXT NOT NULL,
   full_name TEXT,
+  password_hash TEXT,
   status TEXT DEFAULT 'active',
   created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
   provider_user_id TEXT,
@@ -10,7 +11,6 @@ CREATE TABLE users (
   FOREIGN KEY (role_id) REFERENCES roles(id)
 );
 
-ALTER TABLE users ADD COLUMN password_hash TEXT;
 
 CREATE TABLE roles (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
