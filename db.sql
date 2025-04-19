@@ -10,6 +10,8 @@ CREATE TABLE users (
   FOREIGN KEY (role_id) REFERENCES roles(id)
 );
 
+ALTER TABLE users ADD COLUMN password_hash TEXT;
+
 CREATE TABLE roles (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   name TEXT UNIQUE NOT NULL,
